@@ -1,6 +1,6 @@
 # Teste-At-Group!
 
-Projeto de gerenciamento de usuários, teste para at.group.
+Projeto de gerenciamento de usuários, teste para At Group.
 
 <details>
   <summary><strong>💻 O que está sendo desenvolvido</strong></summary><br />
