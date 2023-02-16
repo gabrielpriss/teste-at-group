@@ -1,6 +1,4 @@
 import Router from './components/Router';
-import UserContext from './context/UserContext';
-// import './card.css'
 
 function App() {
   return (

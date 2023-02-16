@@ -27,16 +27,15 @@ export default class Login extends React.Component {
     handleSubmit = async () => {
         const { email, senha } = this.state;
         if (email === "" || senha === "") {
-            { this.setState({ errorMessage: 'Preencha todos os campos' }) };
+            this.setState({ errorMessage: 'Preencha todos os campos' });
             return;
         }
         let re = /\S+@\S+\.\S+/;
         let valido = re.test(email);
-        if (valido != true) {
-            { this.setState({ errorMessage: 'Digite um email válido' }) };
+        if (valido !== true) {
+            this.setState({ errorMessage: 'Digite um email válido' });
             return;
         }
-        let errorr = '';
         await axios.post(`http://localhost:3001/user/login`, { "email": email, "senha": senha })
             .then((response) => {
                 if (response.status === 200) {

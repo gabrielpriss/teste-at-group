@@ -45,17 +45,17 @@ export default class Register extends React.Component {
     handleSubmit = async () => {
         const { nome, email, senha, senha2, avatar, data_nascimento } = this.state;
         if (nome === "" || email === "" || senha === "" || data_nascimento === "") {
-            { this.setState({ errorMessage: 'Preencha todos os campos' }) };
+            this.setState({ errorMessage: 'Preencha todos os campos' });
             return;
         }
         if (senha !== senha2) {
-            { this.setState({ errorMessage: 'As senhas não coincidem' }) };
+            this.setState({ errorMessage: 'As senhas não coincidem' });
             return;
         }
         let re = /\S+@\S+\.\S+/;
         let valido = re.test(email);
-        if (valido != true) {
-            { this.setState({ errorMessage: 'Digite um email válido' }) };
+        if (valido !== true) {
+            this.setState({ errorMessage: 'Digite um email válido' });
             return;
         }
         const valid = checkTrueDate(this.state.data_nascimento)
@@ -64,7 +64,7 @@ export default class Register extends React.Component {
             this.setState({ errorMessage: '' });
             await axios.post(`http://localhost:3001/user/`, { "nome": nome, "email": email, "senha": senha, "avatar": avatar, "data_nascimento": data_nascimento });
         } else {
-            { this.setState({ errorMessage: valid }) }
+            this.setState({ errorMessage: valid })
             return;
         }
     }
