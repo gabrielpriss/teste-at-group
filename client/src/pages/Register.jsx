@@ -90,11 +90,11 @@ export default class Register extends React.Component {
                         <br />
                         <b>Senha</b>
                         <br />
-                        <input name="senha" placeholder="Digite sua Senha" onChange={this.handleInputChange} value={this.state.senha} type='text'></input>
+                        <input name="senha" placeholder="Digite sua Senha" onChange={this.handleInputChange} value={this.state.senha} type='password'></input>
                         <br />
                         <b>Confirme sua senha</b>
                         <br />
-                        <input name="senha2" placeholder="Confirme sua senha" onChange={this.handleInputChange} value={this.state.senha2} type='text'></input>
+                        <input name="senha2" placeholder="Confirme sua senha" onChange={this.handleInputChange} value={this.state.senha2} type='password'></input>
                         <br />
                         <b>Data de Nascimento</b>
                         <br />
