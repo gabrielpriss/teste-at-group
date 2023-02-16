@@ -2,7 +2,6 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-// import EnqCard from '../components/EnqCard';
 
 export default class Login extends React.Component {
     constructor(props) {
@@ -77,11 +76,10 @@ render() {
                     <br />
                     <b>Senha</b>
                     <br />
-                    <input name="senha" placeholder="Digite sua Senha" onChange={this.handleInputChange} value={this.state.senha} type='text'></input>
+                    <input name="senha" placeholder="Digite sua Senha" onChange={this.handleInputChange} value={this.state.senha} type='password'></input>
                     <br />
                     <p>Ainda não tem cadastro?</p>
                     <Link className='Title' to='/register'><h2>Se cadastrar</h2></Link>
-                    {/* <EnqCard data={enquetes} /> */}
                 </label>
             </form>
             <button className="button" onClick={this.handleSubmit}>

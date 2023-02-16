@@ -9,6 +9,7 @@ export default class Register extends React.Component {
             nome: '',
             email: "",
             senha: "",
+            senha2: "",
             avatar: "",
             data_nascimento: "",
             errorMessage: "",
@@ -42,9 +43,13 @@ export default class Register extends React.Component {
     }
 
     handleSubmit = async () => {
-        const { nome, email, senha, avatar, data_nascimento } = this.state;
+        const { nome, email, senha, senha2, avatar, data_nascimento } = this.state;
         if (nome === "" || email === "" || senha === "" || data_nascimento === "") {
             { this.setState({ errorMessage: 'Preencha todos os campos' }) };
+            return;
+        }
+        if (senha !== senha2) {
+            { this.setState({ errorMessage: 'As senhas não coincidem' }) };
             return;
         }
         let re = /\S+@\S+\.\S+/;
@@ -86,6 +91,10 @@ export default class Register extends React.Component {
                         <b>Senha</b>
                         <br />
                         <input name="senha" placeholder="Digite sua Senha" onChange={this.handleInputChange} value={this.state.senha} type='text'></input>
+                        <br />
+                        <b>Confirme sua senha</b>
+                        <br />
+                        <input name="senha2" placeholder="Confirme sua senha" onChange={this.handleInputChange} value={this.state.senha2} type='text'></input>
                         <br />
                         <b>Data de Nascimento</b>
                         <br />
