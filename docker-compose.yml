@@ -4,10 +4,10 @@ services:
     build: ./api
     container_name: api_backend
     ports:
-      - '4000:4000'
+      - '3001:3001'
     volumes:
       - ./server:/src
-      - ./app/node_modules
+      - ./server/node_modules
   client:
     build: ./client
     container_name: client_frontend
@@ -15,6 +15,6 @@ services:
       - '3000:3000'
     volumes:
       - ./client:/src
-      - ./app/node_modules
+      - ./client/node_modules
     stdin_open: true
     tty: true

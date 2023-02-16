@@ -45,8 +45,10 @@ Projeto de gerenciamento de usuários, teste para At Group.
 
   5. Prepare o banco de dados - Rode a QUERY fornecida no arquivo './server/teste_at_group.sql' para gerar o banco de dados com a tabela e um usuário inicial.
 
-  6. Iniciar a aplicação - no diretório './teste_at_group/server' rode o script responsável por iniciar o front e o back-end
-    * `npm start`
+  6. Iniciar a aplicação utilizando Docker, rode o script responsável por iniciar o front e o back-end na pasta raiz do projeto:
+  * `docker-compose up`;
+
+  7. Iniciar a aplicação localmente se preferir - no diretório './teste_at_group/server' rode o script responsável por iniciar o front e o back-end
+  * `npm start`
 
 </details>
-
