@@ -45,7 +45,7 @@ Projeto de gerenciamento de usuários, teste para At Group.
 
   5. Prepare o banco de dados - Rode a QUERY fornecida no arquivo './server/teste_at_group.sql' para gerar o banco de dados com a tabela e um usuário inicial.
 
-  6. Iniciar a aplicação utilizando Docker, rode o script responsável por iniciar o front e o back-end na pasta raiz do projeto:
+  6. O docker ainda não está funcionando, favor rodar localmente (instrução 7). Quando o projeto for atualizado, para iniciar a aplicação utilizando Docker, rode o script responsável por iniciar o front e o back-end na pasta raiz do projeto:
   * `docker-compose up`;
 
   7. Iniciar a aplicação localmente se preferir - no diretório './teste_at_group/server' rode o script responsável por iniciar o front e o back-end
