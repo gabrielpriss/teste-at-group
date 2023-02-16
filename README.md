@@ -43,9 +43,9 @@ Projeto de gerenciamento de usuários, teste para At Group.
 	* sudo service mysql start
   	* sudo service docker start
 
-  5. Prepare o banco de dados - Rode a QUERY fornecida no arquivo './server/teste_at_group.sql' para gerar o banco de dados com um a tabela.
+  5. Prepare o banco de dados - Rode a QUERY fornecida no arquivo './server/teste_at_group.sql' para gerar o banco de dados com a tabela e um usuário inicial.
 
-  6. Iniciar a aplicação - na pasta './teste_at_group/server' rodar o script responsável por iniciar o front e o back-end
+  6. Iniciar a aplicação - no diretório './teste_at_group/server' rode o script responsável por iniciar o front e o back-end
     * `npm start`
 
 </details>
